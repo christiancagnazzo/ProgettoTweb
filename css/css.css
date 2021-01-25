@@ -1,0 +1,562 @@
+body {
+    margin : auto;
+    font-family: "Times New Roman", Times, serif;
+    background-color: black;
+    min-width: 1800px;
+    font-size: 20pt;
+}
+
+#main {
+    text-align: center;
+    padding: 1em;
+    overflow: hidden;
+}
+
+#container {
+    background-color: #000000;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow:  10px  10px 5px #00cccc,
+                -10px -10px 5px #00cccc,
+                 10px -10px 5px #00cccc,
+                -10px  10px 5px #00cccc;
+}
+
+#banner, #w3c {
+    background-color:#1a1a1a;
+    padding: 1em;
+    overflow: hidden; 
+    text-align: center;
+}
+
+#w3c img {
+    opacity: 0.3;
+}
+
+#w3c {
+    background-color: #000000;
+}
+
+.error {
+    color: #ff4d4d;
+    width: auto;
+    margin: 10px;
+    clear: both;
+    overflow: hidden;
+}
+
+/* ----------------- BANNER ------------------ */
+
+
+#logo {
+    float: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 220px;
+    cursor: pointer;
+}
+
+#logo span {
+    background-color: #00cccc;
+    border-radius: 6px;
+    border-style: solid;
+    padding: 9px;
+    font-weight: bold;
+}
+
+#search {
+   float: left;
+   width: auto;
+   margin-left: 60px;
+}
+
+#search input, select, #logout input {
+    height: 33px;
+}
+
+#searchBtn, select {
+    font-size: 12pt;
+}
+
+#searchBtn:hover {
+    color:#00cccc;
+    background-color: white;
+}
+
+#drag {
+    width: 100%;
+    left: 0;
+    height: 0px;
+    position: fixed;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    top: 0;
+}
+
+#toWatch  {
+    float: left;
+    width: 200px;
+    padding-left: 30px;
+}
+
+.iconMovie {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toWatch i {
+    color:#00cccc;
+}
+
+#toWatch span {
+    color:#00cccc;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#logout {
+    float: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: auto;
+}
+
+.welcome {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+#logout input {
+    font-size: 19px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* ----------------- LOGIN/SIGNUP ------------------ */
+
+#search input, #loginForm input, #signupForm input{
+    border-radius: 8px;
+    vertical-align: middle;
+    margin: 10px;
+    height: 33px;
+}
+
+
+input:invalid {
+    color: red;
+}
+
+#loginForm, #signupForm {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    border-style: solid;
+    border-color: #00cccc;
+    border-radius: 10px;
+    color: white;
+    display:inline-block;
+    margin: 85px;
+    width: 400px;
+}
+
+#signupForm label{
+    width: 110px;
+    float: left;
+    clear: left;
+    margin: 20px;
+}
+
+#signupForm input[type="text"], #signupForm input[type="password"], #signupForm input[type="email"] {
+    float: left;
+    width: 200px;
+    margin: 15px;
+}
+
+#loginForm > a {
+    color: white;
+}
+
+
+#loginBtn, #signupBtn {
+    background-color: #00cccc;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    font-size: 19pt;
+}
+
+
+
+/* ----------- HOMEPAGE ------------- */
+
+#today, #favourite, #top {
+    width: 95%;
+    overflow: hidden;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 20px auto 60px;
+    border-width: 1px;
+    border-color: #00cccc;
+    border-style: solid;
+    border-radius: 10px;
+    display: none;
+}
+
+#today img, #favourite img, #top img {
+    width: 18%;
+    height: 15%;
+    float: left;
+    margin: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.intestation {
+    width: auto;
+    color: #00cccc;
+    font-size: 28pt;
+    font-weight: bold;
+    margin: 10px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.type {
+    width: 280px;
+    float: left;
+    text-align: left;
+}
+
+.all {
+   width: 100px;
+   float: right;text-align: right;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+/* ---------- MOVIE/ACTOR INFO ------------- */
+
+#movieContainer, #actorContainer, .container {
+    width: 95%;
+    overflow: hidden;
+    padding: 15px;
+    margin: 20px auto auto;
+    display: none;
+}
+
+#left {
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#actorPhoto, .moviePhoto {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    border-color: #dad9d4;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.moviePhoto {
+    cursor: pointer;
+}
+
+#movieTitle {
+    width: auto;
+    text-align: center;
+    color:#00cccc;
+    font-weight: bold;
+    margin: 8px;
+    font-size: 28pt;
+}
+
+#right {
+    float: left;
+    width: 50%;
+}
+
+#right ul {
+    color: white;
+    text-align: left;
+}
+
+#list_def {
+    float: left;
+    width: 300px;
+    margin-right: 60px;
+    clear: both;
+}
+
+#list_el {
+    float: left;
+    width: 300px;
+    list-style: none;
+}
+
+#description {
+    color: white;
+    float: left;
+    width: 95%;
+    border-color: #00cccc;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 18pt;
+}
+
+#actorsContainer {
+    width: 95%;
+    overflow: hidden;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.actorsImg {
+    width: 200px;
+    height: 240px;
+    float: left;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    clear: both;
+}
+
+.intest, #right > span, #movieListContainer > span   {
+    width: auto;
+    float: left;
+    color:grey;
+    font-weight: bold;
+    font-size: 28pt;
+    clear: both;
+}
+
+.actor {
+    width: auto;
+    float: left;
+    margin: 2% 2% 2% 0;
+}
+
+.character {
+    color: white;
+    float: left;
+    width: auto;
+}
+
+#movieListContainer {
+    float: left;
+    width: auto;
+}
+
+#movieList {
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    list-style: none;
+    text-align: left;
+    clear: both;
+}
+
+.container {
+    margin-bottom: 20px;
+    display: none;
+}
+
+.container ul {
+    padding-top: 80px;
+}
+
+.container #movieTitle {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* ------------  RATING --------- */
+
+.rating input[type="radio"] {
+	position: fixed;
+	top: 0;
+	right: 100%;
+}
+
+#movieContainer label {
+	font-size: 20pt;
+	padding: 0.5em;
+	margin: 0;
+	float: left;
+	cursor: pointer;
+}
+
+/* 
+    el1 + el2 : el2 directly after el1
+    el1 ~ el2 : occurrences of element2 that are preceded by element1
+*/
+.rating input[type="radio"]:checked ~ input + label {
+	background: none;
+	color: #aaa;
+}
+
+.rating input, .rating label {
+	color: orange;
+	margin: 0 0 1em 0;
+}
+
+.rating, #watchDiv, #remove {
+    width: auto;
+    float: left;
+}
+
+#watchDiv {
+    margin-left: 90px;
+}
+
+#love {
+    color: #ff4d4d;
+}
+
+#yesWatch {
+    color: green;
+}
+
+#notLove, #notWatch {
+    color: #aaa;
+}
+
+#remove label {
+    color: #1a1a1a;
+}
+
+
+/* -------------- ALL MOVIE LIST AND ADVANCED SEARCH -------- */
+
+.titleType {
+    color: white;
+    background-color: grey;
+    font-weight: bold;
+    font-size: 28pt;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.selected {
+    color: black;
+    background-color: #00cccc;
+    font-weight: bold;
+    font-size: 28pt;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+fieldset {
+    color:#00cccc;
+    margin: 30px;
+    padding: 15px;
+	border: 2px outset gray;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+#advancedForm {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+fieldset select, fieldset label, fieldset input {
+    margin: 15px;
+}
+
+label[for=all], label[for=myF], label[for=notMyF], fieldset span {
+    color: #dad9d4;
+    margin: 10px;
+}
+
+#filter {
+    color: white;
+    cursor: pointer;
+}
+
+/* ------------------------------ MOVIE REVIEWS ------------------- */
+
+#review {
+    color: white;
+    float: left;
+    width: 95%;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+textarea {
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+#delete, #confirm {
+    margin: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 10px;
+    color: #00cccc;
+    background-color: #000000;
+}
+
+textarea:disabled {
+    color:white;
+    background-color: #aaa;
+}
+
+#allReviews {
+    width: 95%;
+    overflow: hidden;
+    margin: 20px auto auto;
+}
+
+.containerReview {
+    color: white;
+    border-style: solid;
+    border-color:#00cccc;
+    float: left;
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.containerReview span {
+    float: right;
+    width: 300px;
+    text-align: right;
+    margin-right: 30px;
+}
